@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="/img/button-final.ico"><title class="tt">Test Case Generator</title>
+</head>
+
+<body style="background-color: #000a12">
+  <header class="header">
+    <div class="title">
+      <img style="display: inline-block" src="/img/button-final.png" width="100" alt="">
+      <p style="display: inline-block;">TEST CASE GENERATOR</p>
+      <button class="float-right font-mono bg-green-700 hover:bg-green-500 font-semibold hover:text-white py-0.1 mr-4 mb-2 px-3 border border-green-900 hover:border-transparent rounded">
+        Generate
+      </button>
+    </div>
+  </header>
+
+
+  <div style="background-color: #102027;margin-top: 70px;" class="box border rounded flex flex-col shadow">
+    <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
+      <div style="float: left">
+        <h3 class="text-white font-mono text-xl font-bold">
+          Working Code
+        </h3>
+      </div>
+      <div style="float: right;background-color:inherit">
+        <select class="select appearance-none" name="Languages" id="select1">
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Python3">Python3</option>
+        </select>
+      </div>
+    </div>
+    <textarea spellcheck="false" id="myTextarea"
+      style="resize: none; font-family: Fira Code; color:white; white-space: pre-wrap"
+      placeholder="Paste Your Code Here" class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="20" name="tt"
+      id="working"></textarea>
+  </div>
+
+
+
+
+  <div style="background-color: #102027;" class=" box border rounded flex flex-col shadow">
+    <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
+      <div style="float: left">
+        <h3 class="text-white font-mono text-xl font-bold">Buggy Code</h3>
+      </div>
+      <div style="float: right;background-color:inherit">
+        <select class=" select" name="Languages" id="select1">
+          <option value="C">C</option>
+          <option value="C++">C++</option>
+          <option value="Python3">Python3</option>
+        </select>
+      </div>
+    </div>
+    <textarea spellcheck="false" style="resize: none;font-family: Fira Code; color:white; white-space: pre-wrap"
+      placeholder="Paste Your Code Here" class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="20"
+      name="tt"></textarea>
+  </div>
+
+
+
+  <div style="background-color: #102027;" class=" box border rounded flex flex-col shadow bg-white">
+    <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
+      <div style="float: left">
+        <h3 class="text-white font-mono text-xl font-bold">Test Case</h3>
+      </div>
+      <div style="float: right;background-color:inherit">
+        <select class=" select" name="Languages" id="select1">
+          <option value="custom">Custom</option>
+          <option value="pattern">Pattern</option>
+        </select>
+      </div>
+    </div>
+    <div class="box__title bg-grey-lighter">
+      <div style="float: left;flex:2;margin-right: -4vw;padding: 0%;"><textarea spellcheck="false"
+          style="resize: none;font-family: Fira Code; color: white; white-space: pre-wrap;resize: none ; width:60vw;"
+          placeholder="Enter your Test Case" class="text-grey-darkest  p-2 m-1 bg-transparent " name="tt" id="out"
+          rows="20"></textarea>
+      </div>
+      <div style="float: right;flex:1;margin: 0%;padding: 0%;"><textarea readonly name="instructions"
+          style="resize: none;font-family: Fira Code; color: white; white-space: pre-wrap; width: 30vw ;"
+          class=" text-grey-darkest  p-2 m-1 bg-transparent " id="instructions" rows="20" cols="50">Instructions</textarea>
+      </div>
+    </div>
+  </div>
+
+  <div style="background-color:#102027;" class=" border rounded flex flex-col shadow">
+    <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
+      <h3 class="text-white font-mono text-xl font-bold">OUTPUT</h3>
+    </div>
+    <textarea readonly spellcheck="false" id="out1" placeholder="Expected Output"
+      style="resize: none;font-family: Fira Code; color:white; white-space: pre-wrap"
+      class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="9" name="tt"></textarea>
+    <hr>
+    <textarea readonly spellcheck="false" id="out2" placeholder="Your Output"
+      style="resize: none;font-family: Fira Code; color:white; white-space: pre-wrap"
+      class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="10" name="tt"></textarea>
+  </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  color: white;
+  font-family: 'Bubblegum Sans';
+  font-weight: 900;
+  font-size: xx-large;
+  text-align: center;
+
+}
+.header {
+  background-color: #263238;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.select {
+  background-color: inherit;
+  color: white;
+  font-weight: 700;
+  font-family: 'Roboto';
+}
+
+textarea {
+  resize: none;
+}
