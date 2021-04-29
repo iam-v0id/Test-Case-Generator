@@ -5,7 +5,6 @@ const app = express();
 app.use(express.static('src'))
 
 app.get("/", function(req, res){
-    alert('Website Under Construction');
     res.sendFile( __dirname + "/index.html" );
 })
 
