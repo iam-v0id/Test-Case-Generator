@@ -16,6 +16,7 @@
   top: 0;
   width: 100%;
   padding-top: 10px;
+  padding-left: 20px;
 }
 
 .select {
@@ -27,4 +28,10 @@
 
 textarea {
   resize: none;
+}
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  st
 }

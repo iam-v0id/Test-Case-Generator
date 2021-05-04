@@ -7,11 +7,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="icon" href="/img/button-final.ico"><title class="tt">Test Case Generator</title>
+  <link rel="icon" href="/img/button-final.ico">
+  <title class="tt">Test Case Generator</title>
   <script>
     function showAlert()
     {
-      alert('This Website is Under Construction');
+      alert( 'This Website is Under Construction' );
     }
   </script>
 
@@ -22,14 +23,19 @@
     <div class="title">
       <img style="display: inline-block" src="/img/button-final.png" width="100" alt="">
       <p style="display: inline-block;">TEST CASE GENERATOR</p>
-      <button class="float-right font-mono bg-green-700 hover:bg-green-500 font-semibold hover:text-white py-0.1 mr-4 mb-2 px-3 border border-green-900 hover:border-transparent rounded">
+      <button
+        class="float-right font-mono bg-green-700 hover:bg-green-500 font-semibold hover:text-white py-0.1 mr-4 mb-2 px-3 border border-green-900 hover:border-transparent rounded">
         Generate
+      </button >
+    
+      <button class="float-left mr-4 mb-2 px-3 bg-yellow-500 hover:bg-yellow-300">
+        Guide
       </button>
     </div>
   </header>
 
-
-  <div style="background-color: #102027;margin-top: 70px;" class="box border rounded flex flex-col shadow">
+  <div class="flex">
+  <div style="background-color: #102027;margin-top: 70px;width: 50%;" class="box border rounded flex flex-col shadow">
     <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
       <div style="float: left">
         <h3 class="text-white font-mono text-xl font-bold">
@@ -51,9 +57,7 @@
   </div>
 
 
-
-
-  <div style="background-color: #102027;" class=" box border rounded flex flex-col shadow">
+  <div style="background-color: #102027;margin-top: 70px; width: 50%;" class=" box border rounded flex flex-col shadow">
     <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
       <div style="float: left">
         <h3 class="text-white font-mono text-xl font-bold">Buggy Code</h3>
@@ -70,10 +74,10 @@
       placeholder="Paste Your Code Here" class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="20"
       name="tt"></textarea>
   </div>
+  </div>
 
-
-
-  <div style="background-color: #102027;" class=" box border rounded flex flex-col shadow bg-white">
+  <div class="flex">
+  <div style="background-color: #102027;width:50%" class=" box border rounded flex flex-col shadow bg-white">
     <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
       <div style="float: left">
         <h3 class="text-white font-mono text-xl font-bold">Test Case</h3>
@@ -91,14 +95,11 @@
           placeholder="Enter your Test Case" class="text-grey-darkest  p-2 m-1 bg-transparent " name="tt" id="out"
           rows="20"></textarea>
       </div>
-      <div style="float: right;flex:1;margin: 0%;padding: 0%;"><textarea readonly name="instructions"
-          style="resize: none;font-family: Fira Code; color: white; white-space: pre-wrap; width: 30vw ;"
-          class=" text-grey-darkest  p-2 m-1 bg-transparent " id="instructions" rows="20" cols="50">Instructions</textarea>
-      </div>
+
     </div>
   </div>
 
-  <div style="background-color:#102027;" class=" border rounded flex flex-col shadow">
+  <div style="background-color:#102027; width: 50%;" class=" border rounded flex flex-col shadow">
     <div style="background-color:#4f5b62;" class="box__title bg-grey-lighter px-3 py-2 border-b">
       <h3 class="text-white font-mono text-xl font-bold">OUTPUT</h3>
     </div>
@@ -110,7 +111,7 @@
       style="resize: none;font-family: Fira Code; color:white; white-space: pre-wrap"
       class="text-grey-darkest flex-1 p-2 m-1 bg-transparent" rows="10" name="tt"></textarea>
   </div>
-
+  </div>
 
 
 </body>
